@@ -54,3 +54,13 @@ Jika ingin menggabungkan 2 atau lebih tipe data string, bisa dengan cara menggun
     document.writeln("</br>");
     document.writeln('Saya adalah tipe data' + 'yang berisikan kosong / lebih karakter');
 </script>
+
+6. Escape Sequence
+Escape Sequence adalah karakter khusus yang ada dalam string seperti enter (\n), tab (\t), slash(\\), petik satu (\'), petik dua (\"). contoh : 
+
+<script>
+    document.writeln("<textarea cols='100' rows='10'>");
+    document.write("Escape\nSequence\n");
+    document.write("\tadalah karakter khusus dalam string, seperti enter(\\\n), tab(\\\t), slash(\\\\), tanda petik satu(\\\') dan petik dua(\\\").");
+    document.writeln("</textarea>");
+</script>
