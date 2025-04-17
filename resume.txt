@@ -64,3 +64,9 @@ Escape Sequence adalah karakter khusus yang ada dalam string seperti enter (\n),
     document.write("\tadalah karakter khusus dalam string, seperti enter(\\\n), tab(\\\t), slash(\\\\), tanda petik satu(\\\') dan petik dua(\\\").");
     document.writeln("</textarea>");
 </script>
+
+7. Variabel
+Variabel digunakan untuk menyimpan data. 
+Dengan menggunakan variabel kita bisa menggunakan ulang data dengan cara menyebutkan nama variabelnya.
+Cara membuat variabel adalah dengan menuliskan 'var' kemudian diikuti dengan nama variablenya.
+Javascript adalah dynamic langaunge yang artinya variable dalam javascript tidak harus terpaku kepada satu tipe data tertentu, kita bisa mengubah tipe data pada satu variabel yang sama.
