@@ -68,5 +68,93 @@ Escape Sequence adalah karakter khusus yang ada dalam string seperti enter (\n),
 7. Variabel
 Variabel digunakan untuk menyimpan data. 
 Dengan menggunakan variabel kita bisa menggunakan ulang data dengan cara menyebutkan nama variabelnya.
-Cara membuat variabel adalah dengan menuliskan 'var' kemudian diikuti dengan nama variablenya.
+Cara membuat variabel adalah dengan menuliskan 'var' kemudian diikuti dengan nama variablenya. contoh : 
+
+<scrip>
+    var fullName;
+    var firstName;
+    var lastName;
+    var title;
+</scrip>
+
 Javascript adalah dynamic langaunge yang artinya variable dalam javascript tidak harus terpaku kepada satu tipe data tertentu, kita bisa mengubah tipe data pada satu variabel yang sama.
+Setelah variabel di deklarasikan kita bisa mengubah nilai / value dari variabel tersebut, caranya dengan menuliskan nama variabel, lalu sama dengan (=) dan terakhir tentukan nilainya. contoh :
+
+<scrip>
+    var fullName;
+    var firstName;
+    var lastName;
+    var title;
+
+    fullName = "Irfan Machmud";
+    firstName = "Irfan";
+    lastName = "Machmud";
+    title = "S.Kom,";
+
+</scrip>
+
+Kita juga bisa memberikan nilai secara langsung ke variabel disaat melakukan deklarasi variabel.
+
+    <scrip>
+
+        var fullName = "Irfan Machmud";
+        var firstName = "Irfan";
+        var lastName = "Machmud";
+        var title = "S.Kom,";
+
+    </scrip>
+
+Sebelum tahun 2015 untuk membuat variabel hanya menggunakan kata kunci 'var'. tapi sejak 2015, sejak diperkenalkan ECMASCRIPT diperkenalkan kata kunci baru untuk membuat variabel yaitu 'let' dan 'const'.
+Sejak 2015 kata kunci var sudah tidak direkomendasikan lagi untuk pembuatan variabel, dikarenakan ada masalah dari desain awal 'var'. contoh : 
+
+    <script>
+      let fullName = "Irfan Machmud S.Kom,";
+      let firstName = "Irfan";
+      let lastName = "Machmud";
+      let title = "S.Kom,";
+    </script>
+
+Variabel yang di deklarasikan menggunakan kata kunci var, dan let itu nilainya masih bisa diubah. Kata kunci 'let' digunakan untuk menggantikan kata kunci 'var'.
+Berbeda dengan variabel yang di deklarasikan menggunakan kata kunci 'const'. Variabel yang dideklarasikan menggunakan kata kunci 'const' setelah ditentukan nilainya, maka sudah tidak dapat diubah.
+Data ini biasanya disebut dengan constant. contoh :
+
+    <script>
+        const app = "Hello App";
+
+        app = "New Hello App";  // error
+    </script>
+
+Javascript mendukung banyak operasi matematika untuk tipe data number, seperti : Aritmatika, Augmented Assignments, Unary dll.
+Terdapat banyak operator Aritmatika diantaranya : 
+    +   : penjumlahan
+    -   : pengurangan 
+    *   : perkalian
+    **  : exponensial (pangkat)
+    /   : pembagian
+    %   : sisa bagi 
+Contoh : 
+
+    <script>
+        let result = 1 + 2;
+        document.writeln("<p>1 + 2 = " + result + "</p>");
+        let originalResult = $result;
+
+        let result = originalResult - 1;
+        document.writeln("<p>" + originalResult + " - 1 = " + result + "</p>");
+        let originalResult = result;
+
+        let result = originalResult * 3;
+        document.writeln("<p>" + originalResult + " x 3 = " + result + "</p>");
+        let originalResult = result;
+
+        let result = originalResult / 2;
+        document.writeln("<p>" + originalResult + " : 2 = " + result + "</p>");
+        let originalResult = result;
+
+        let result = originalResult ** 2;
+        document.writeln("<p>" + originalResult + " ** 2 = " + result + "</p>");
+        let originalResult = result;
+
+        let result = originalResult % 2;
+        document.writeln("<p>" + originalResult + " % 2 = " + result + "</p>");
+    </script>
