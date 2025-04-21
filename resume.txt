@@ -1,160 +1,198 @@
 Belajar Javascript Dasar.
 
 1. Program Hello World
-untuk membuat program javascript bisa dengan menambahkan tag <script> </script> secara langsung didalam file html dan menuliskan script yang ingin dibuat. / dengan membuat file dengan extension '.js', lalu menyertakanya di attribute 'src' pada tag script.
+    untuk membuat program javascript bisa dengan menambahkan tag <script> </script> secara langsung didalam file html dan menuliskan script yang ingin dibuat. / dengan membuat file dengan extension '.js', lalu menyertakanya di attribute 'src' pada tag script.
 
 2. Komentar
-Komentar adalah baris kode yang tidak akan di eksekusi oleh program. dalam javascript kita bisa membuat komentar menggunakan double slash (//) jika ingin memberi komentar pada satu baris. contoh : 
+    Komentar adalah baris kode yang tidak akan di eksekusi oleh program. dalam javascript kita bisa membuat komentar menggunakan double slash (//) jika ingin memberi komentar pada satu baris. contoh : 
 
-// ini adalah komentar
+    // ini adalah komentar
 
-atau dengan tanda slash dan bintang (/* */) untuk membuat komentar lebih dari satu baris. contoh : 
+    atau dengan tanda slash dan bintang (/* */) untuk membuat komentar lebih dari satu baris. contoh : 
 
-/*
-* ini adalah komentar
-* lebih dari satu baris
-*/
+    /*
+    * ini adalah komentar
+    * lebih dari satu baris
+    */
 
 3. Tipe Data Number
-Dalam javascript hanya ada satu tipe data untuk angka yaitu 'number' baik untuk bilangan bulat / bilangan desimal. untuk menuliskan bilangan bulat bisa dengan cara dituliskan langsung. contoh :
+    Dalam javascript hanya ada satu tipe data untuk angka yaitu 'number' baik untuk bilangan bulat / bilangan desimal. untuk menuliskan bilangan bulat bisa dengan cara dituliskan langsung. contoh :
 
-<script>
-    document.writeln(100);  // output : 100
-</script>
+    <script>
+        document.writeln(100);  // output : 100
+    </script>
 
-sedangkan untuk bilangan decimal kita bisa menggunakan tanda titik (.) sebagai pengganti koma. contoh : 
+    sedangkan untuk bilangan decimal kita bisa menggunakan tanda titik (.) sebagai pengganti koma. contoh : 
 
-<script>
-    document.writeln(100.44);   // output : 100,44
-</script>
+    <script>
+        document.writeln(100.44);   // output : 100,44
+    </script>
 
-selain itu dalam javascript juga mendukung berbagai macam number notation, tapi defaultnya menggunakan basis 10. selain itu javascript juga mendukung binary, hexadecimal dan octal. 
-untuk hexadecimal biasanya diawali dengan '0x'. contoh : 0xFF
-untuk binary biasanya diawali dengan '0b'. contoh : 0b10101
-untuk octal bisanya diawali dengan '0o'. contoh : 0o10
+    selain itu dalam javascript juga mendukung berbagai macam number notation, tapi defaultnya menggunakan basis 10. selain itu javascript juga mendukung binary, hexadecimal dan octal. 
+    untuk hexadecimal biasanya diawali dengan '0x'. contoh : 0xFF
+    untuk binary biasanya diawali dengan '0b'. contoh : 0b10101
+    untuk octal bisanya diawali dengan '0o'. contoh : 0o10
 
 4. Tipe Data Boolean
-Tipe data boolean adalah tipe data yang berisikan kebenaran. tipe data ini hanya memiliki 2 nilai yaitu benar / salah.
-nilai benar direpresentasikan dengan 'true'. sedangkan salah direpresentasikan dengan 'false'.
-walaupun tipe data ini terlihat sederhana, tapi nantinya ini akan sangat banyak digunakan dalam pemrograman. contoh:
+    Tipe data boolean adalah tipe data yang berisikan kebenaran. tipe data ini hanya memiliki 2 nilai yaitu benar / salah.
+    nilai benar direpresentasikan dengan 'true'. sedangkan salah direpresentasikan dengan 'false'.
+    walaupun tipe data ini terlihat sederhana, tapi nantinya ini akan sangat banyak digunakan dalam pemrograman. contoh:
 
-<script>
-    document.writeln(true);
-    document.writeln("</br>");
-    document.writeln(false);
-</script>
+    <script>
+        document.writeln(true);
+        document.writeln("</br>");
+        document.writeln(false);
+    </script>
 
 5. Tipe Data String
-Tipe data string atau text adalah tipe data yang berisikan kosong / lebih karakter. 
-Tipe data string harus diawali dan diakhiri dengan tanda petik satu (') atau tanda petik dua("). 
-Jika ingin menggabungkan 2 atau lebih tipe data string, bisa dengan cara menggunakan tanda plus (+). contoh :
+    Tipe data string atau text adalah tipe data yang berisikan kosong / lebih karakter. 
+    Tipe data string harus diawali dan diakhiri dengan tanda petik satu (') atau tanda petik dua("). 
+    Jika ingin menggabungkan 2 atau lebih tipe data string, bisa dengan cara menggunakan tanda plus (+). contoh :
 
-<script>
-    document.writeln("Hai saya string");
-    document.writeln("</br>");
-    document.writeln('Saya adalah tipe data' + 'yang berisikan kosong / lebih karakter');
-</script>
+    <script>
+        document.writeln("Hai saya string");
+        document.writeln("</br>");
+        document.writeln('Saya adalah tipe data' + 'yang berisikan kosong / lebih karakter');
+    </script>
 
 6. Escape Sequence
-Escape Sequence adalah karakter khusus yang ada dalam string seperti enter (\n), tab (\t), slash(\\), petik satu (\'), petik dua (\"). contoh : 
+    Escape Sequence adalah karakter khusus yang ada dalam string seperti enter (\n), tab (\t), slash(\\), petik satu (\'), petik dua (\"). contoh : 
 
-<script>
-    document.writeln("<textarea cols='100' rows='10'>");
-    document.write("Escape\nSequence\n");
-    document.write("\tadalah karakter khusus dalam string, seperti enter(\\\n), tab(\\\t), slash(\\\\), tanda petik satu(\\\') dan petik dua(\\\").");
-    document.writeln("</textarea>");
-</script>
+    <script>
+        document.writeln("<textarea cols='100' rows='10'>");
+        document.write("Escape\nSequence\n");
+        document.write("\tadalah karakter khusus dalam string, seperti enter(\\\n), tab(\\\t), slash(\\\\), tanda petik satu(\\\') dan petik dua(\\\").");
+        document.writeln("</textarea>");
+    </script>
 
 7. Variabel
-Variabel digunakan untuk menyimpan data. 
-Dengan menggunakan variabel kita bisa menggunakan ulang data dengan cara menyebutkan nama variabelnya.
-Cara membuat variabel adalah dengan menuliskan 'var' kemudian diikuti dengan nama variablenya. contoh : 
-
-<scrip>
-    var fullName;
-    var firstName;
-    var lastName;
-    var title;
-</scrip>
-
-Javascript adalah dynamic langaunge yang artinya variable dalam javascript tidak harus terpaku kepada satu tipe data tertentu, kita bisa mengubah tipe data pada satu variabel yang sama.
-Setelah variabel di deklarasikan kita bisa mengubah nilai / value dari variabel tersebut, caranya dengan menuliskan nama variabel, lalu sama dengan (=) dan terakhir tentukan nilainya. contoh :
-
-<scrip>
-    var fullName;
-    var firstName;
-    var lastName;
-    var title;
-
-    fullName = "Irfan Machmud";
-    firstName = "Irfan";
-    lastName = "Machmud";
-    title = "S.Kom,";
-
-</scrip>
-
-Kita juga bisa memberikan nilai secara langsung ke variabel disaat melakukan deklarasi variabel.
+    Variabel digunakan untuk menyimpan data. 
+    Dengan menggunakan variabel kita bisa menggunakan ulang data dengan cara menyebutkan nama variabelnya.
+    Cara membuat variabel adalah dengan menuliskan 'var' kemudian diikuti dengan nama variablenya. contoh : 
 
     <scrip>
+        var fullName;
+        var firstName;
+        var lastName;
+        var title;
+    </scrip>
 
-        var fullName = "Irfan Machmud";
-        var firstName = "Irfan";
-        var lastName = "Machmud";
-        var title = "S.Kom,";
+    Javascript adalah dynamic langaunge yang artinya variable dalam javascript tidak harus terpaku kepada satu tipe data tertentu, kita bisa mengubah tipe data pada satu variabel yang sama.
+    Setelah variabel di deklarasikan kita bisa mengubah nilai / value dari variabel tersebut, caranya dengan menuliskan nama variabel, lalu sama dengan (=) dan terakhir tentukan nilainya. contoh :
+
+    <scrip>
+        var fullName;
+        var firstName;
+        var lastName;
+        var title;
+
+        fullName = "Irfan Machmud";
+        firstName = "Irfan";
+        lastName = "Machmud";
+        title = "S.Kom,";
 
     </scrip>
 
-Sebelum tahun 2015 untuk membuat variabel hanya menggunakan kata kunci 'var'. tapi sejak 2015, sejak diperkenalkan ECMASCRIPT diperkenalkan kata kunci baru untuk membuat variabel yaitu 'let' dan 'const'.
-Sejak 2015 kata kunci var sudah tidak direkomendasikan lagi untuk pembuatan variabel, dikarenakan ada masalah dari desain awal 'var'. contoh : 
+    Kita juga bisa memberikan nilai secara langsung ke variabel disaat melakukan deklarasi variabel.
 
-    <script>
-      let fullName = "Irfan Machmud S.Kom,";
-      let firstName = "Irfan";
-      let lastName = "Machmud";
-      let title = "S.Kom,";
-    </script>
+        <scrip>
 
-Variabel yang di deklarasikan menggunakan kata kunci var, dan let itu nilainya masih bisa diubah. Kata kunci 'let' digunakan untuk menggantikan kata kunci 'var'.
-Berbeda dengan variabel yang di deklarasikan menggunakan kata kunci 'const'. Variabel yang dideklarasikan menggunakan kata kunci 'const' setelah ditentukan nilainya, maka sudah tidak dapat diubah.
-Data ini biasanya disebut dengan constant. contoh :
+            var fullName = "Irfan Machmud";
+            var firstName = "Irfan";
+            var lastName = "Machmud";
+            var title = "S.Kom,";
 
-    <script>
-        const app = "Hello App";
+        </scrip>
 
-        app = "New Hello App";  // error
-    </script>
+    Sebelum tahun 2015 untuk membuat variabel hanya menggunakan kata kunci 'var'. tapi sejak 2015, sejak diperkenalkan ECMASCRIPT diperkenalkan kata kunci baru untuk membuat variabel yaitu 'let' dan 'const'.
+    Sejak 2015 kata kunci var sudah tidak direkomendasikan lagi untuk pembuatan variabel, dikarenakan ada masalah dari desain awal 'var'. contoh : 
 
-Javascript mendukung banyak operasi matematika untuk tipe data number, seperti : Aritmatika, Augmented Assignments, Unary dll.
-Terdapat banyak operator Aritmatika diantaranya : 
-    +   : penjumlahan
-    -   : pengurangan 
-    *   : perkalian
-    **  : exponensial (pangkat)
-    /   : pembagian
-    %   : sisa bagi 
-Contoh : 
+        <script>
+        let fullName = "Irfan Machmud S.Kom,";
+        let firstName = "Irfan";
+        let lastName = "Machmud";
+        let title = "S.Kom,";
+        </script>
 
-    <script>
-        let result = 1 + 2;
-        document.writeln("<p>1 + 2 = " + result + "</p>");
-        let originalResult = $result;
+    Variabel yang di deklarasikan menggunakan kata kunci var, dan let itu nilainya masih bisa diubah. Kata kunci 'let' digunakan untuk menggantikan kata kunci 'var'.
+    Berbeda dengan variabel yang di deklarasikan menggunakan kata kunci 'const'. Variabel yang dideklarasikan menggunakan kata kunci 'const' setelah ditentukan nilainya, maka sudah tidak dapat diubah.
+    Data ini biasanya disebut dengan constant. contoh :
 
-        let result = originalResult - 1;
-        document.writeln("<p>" + originalResult + " - 1 = " + result + "</p>");
-        let originalResult = result;
+        <script>
+            const app = "Hello App";
 
-        let result = originalResult * 3;
-        document.writeln("<p>" + originalResult + " x 3 = " + result + "</p>");
-        let originalResult = result;
+            app = "New Hello App";  // error
+        </script>
 
-        let result = originalResult / 2;
-        document.writeln("<p>" + originalResult + " : 2 = " + result + "</p>");
-        let originalResult = result;
+8. Operator Matematika 
+    Javascript mendukung banyak operasi matematika untuk tipe data number, seperti : Aritmatika, Augmented Assignments, Unary dll.
+    Terdapat banyak operator Aritmatika diantaranya : 
+        +   : penjumlahan
+        -   : pengurangan 
+        *   : perkalian
+        **  : exponensial (pangkat)
+        /   : pembagian
+        %   : sisa bagi 
+    Contoh : 
 
-        let result = originalResult ** 2;
-        document.writeln("<p>" + originalResult + " ** 2 = " + result + "</p>");
-        let originalResult = result;
+        <script>
+            let result = 1 + 2;
+            document.writeln("<p>1 + 2 = " + result + "</p>");
+            let originalResult = $result;
 
-        let result = originalResult % 2;
-        document.writeln("<p>" + originalResult + " % 2 = " + result + "</p>");
-    </script>
+            let result = originalResult - 1;
+            document.writeln("<p>" + originalResult + " - 1 = " + result + "</p>");
+            let originalResult = result;
+
+            let result = originalResult * 3;
+            document.writeln("<p>" + originalResult + " x 3 = " + result + "</p>");
+            let originalResult = result;
+
+            let result = originalResult / 2;
+            document.writeln("<p>" + originalResult + " : 2 = " + result + "</p>");
+            let originalResult = result;
+
+            let result = originalResult ** 2;
+            document.writeln("<p>" + originalResult + " ** 2 = " + result + "</p>");
+            let originalResult = result;
+
+            let result = originalResult % 2;
+            document.writeln("<p>" + originalResult + " % 2 = " + result + "</p>");
+        </script>
+
+    Operator Augmented Assignments adalah ketika operator aritmatika dilakukan pada variabel itu sendiri. contoh :
+
+    OPERATOR ARITMATIKA      | OPERATOR AUGMENTED ASSIGNMENTS 
+    =========================================================
+    result = result + 10     | result += 10
+    result = result - 10     | result -= 10
+    result = result * 10     | result *= 10
+    result = result ** 10    | result **= 10
+    result = result / 10     | result /= 10
+    result = result % 10     | result %= 10
+
+    Operator UNARY adalah operator yang hanya membutuhkan satu angka saja. 
+
+    OPERATOR    | KETERANGAN
+    ===========================================
+    +           | Menunjukan bilangan positif
+    -           | Menunjukan bilangan negatif
+    ++          | Increment, Menaikan 1 angka
+    --          | Decrement, Menurunkan 1 angka
+
+9. Operator Perbandingan
+    Operator perbandingan dilakukan untuk membandingkan 2 buah data.
+    operasi dari operatori ini menghasilkan nilai boolean(kebenaran).
+    jika hasilnya operasinya benar, berarti nilainya true.
+    jika hasilnya operasinya salah, berarti nilainya false.
+
+    OPERATOR        | KETERANGAN
+    ===========================================
+    >               | lebih dari
+    <               | kurang dari
+    >=              | lebih dari sama dengan
+    <=              | kurang dari sama dengan
+    ==              | sama dengan
+    ===             | sama dengan dan sama tipe
+    !=              | tidak sama dengan
+    !==             | tidak sama dengan atau tidak sama tipe
