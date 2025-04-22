@@ -196,3 +196,48 @@ Belajar Javascript Dasar.
     ===             | sama dengan dan sama tipe
     !=              | tidak sama dengan
     !==             | tidak sama dengan atau tidak sama tipe
+
+10. Operator Logika
+    Operator logika adalah operator untuk 2 data boolean.
+    Hasil dari operator ini juga adalah data boolean.
+
+    OPERATOR        | KETERANGAN
+    ===========================================
+    &&              | Dan
+    ||              | Atau
+    !               | Kebalikan
+
+    Operator && (Dan).
+    Nilai 1 | Operator  | Nilai 2   | Hasil
+    =========================================
+    true    | &&        | true      | true
+    true    | &&        | false     | false
+    false   | &&        | true      | false
+    false   | &&        | false     | false
+
+    Operator || (Atau).
+    Nilai 1 | Operator  | Nilai 2   | Hasil
+    =========================================
+    true    | ||        | true      | true
+    true    | ||        | false     | true
+    false   | ||        | true      | true
+    false   | ||        | false     | false
+
+    Operator Unary ! (Kebalikan).
+    Operator | Nilai 2   | Hasil
+    ===============================
+    !        | true      | false
+    !        | false     | true
+
+11. Console
+    Javascript memiliki fitur untuk melakukan logging bernama Console.
+    Loging adalah mekanisme yang bisa dilakukan programmer untuk menampilkan informasi dari aplikasi yang sedang berjalan, tanpa mengganggu alur kerja aplikasi dan interaksi user.
+    Untuk melakukan logging menggunakan console, kita hanya perlu menggunakan perintah 'console'.
+    Berikut macam macam Console method : 
+
+    Console Method      | Keterangan 
+    ===================================================
+    console.info(..)    | Memberikan informasi 
+    console.warn(..)    | Memberikan informasi peringatan
+    console.error(..)   | Memberikan informasi error
+    console.table(..)   | Memberikan informasi dalam bentuk table
