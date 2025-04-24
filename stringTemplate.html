@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      // mengambil data dari variabel :
+      const fullName = "Irfan Em";
+      const template = `Nama lengkap : ${fullName}`;
+
+      console.info(template);
+
+      // melakukan operasi aritmatika
+      const name = "Irfan eM";
+      const nilai = 89;
+      const template2 = `Nama : ${name}, lulus : ${nilai > 70}`;
+
+      console.info(template2);
+
+      // mendukung multiline
+      const multiline = `Hai saya Irfan Machmud
+ini adalah teks yang menggunakan string template
+string template memungkinkan kita untuk menulis string secara multiline.
+sangat hebat!`;
+
+      document.writeln("<pre>" + multiline + "</pre>");
+    </script>
+  </body>
+</html>

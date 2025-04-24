@@ -241,3 +241,34 @@ Belajar Javascript Dasar.
     console.warn(..)    | Memberikan informasi peringatan
     console.error(..)   | Memberikan informasi error
     console.table(..)   | Memberikan informasi dalam bentuk table
+
+12. String Template
+    Didalam javascript terdapat sebuah fitur bernama 'String Template'.
+    Dengan fitur ini memunkginkan kita untuk menstubtitusikan data dari luar string ke dalam string. seperti mengambil data dari variabel atau bahkan melakukan operasi aritmatika.
+    Template string juga mendukung multiline.
+    Untuk menggunakan fitu ini gunakan tanda backtik (`) bukan petik satu (') atau petik 2 (").
+    Contoh : 
+
+
+    <script>
+        // mengambil data dari variabel : 
+        const fullName = "Irfan Em";
+        const template = `Nama lengkap : ${fullName}`;
+
+        console.info(template);
+
+        // melakukan operasi aritmatika
+        const name = "Irfan eM";
+        const nilai = 89;
+        const template = `Nama : ${nama}, lulus : ${nilai > 70}`;
+        
+        console.info(template);
+
+        // mendukung multiline
+        const multiline = `Hai saya Irfan Machmud
+ini adalah teks yang menggunakan string template
+string template memungkinkan kita untuk menulis string secara multiline.
+sangat hebat!`;
+
+        document.writeln("<pre>"+ multiline +"</pre>")
+    </script>
