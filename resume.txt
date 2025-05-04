@@ -272,3 +272,83 @@ sangat hebat!`;
 
         document.writeln("<pre>"+ multiline +"</pre>")
     </script>
+
+13. Konversi String dan Number.
+    Saat menerima input dari user, terkadang tipe datanya itu berupa string.
+    Padahal yang kita harapkan adalah number, karena kita akan melakukan operasi aritmatika, misalnya.
+    berikut adalah contoh error yang terjadi, ketika kita tidak melakukan konversi pada data.
+
+        const value1 = "1";
+        const value2 = 1;
+
+        const result = value1 + value2;
+
+        document.writeln(`<p>${result}</p>`); // outputnya akan 11 karena javascript menganggap concat string.
+
+    untuk mengatasinya kita bisa menggunakan beberapa method untuk melakukan konversi dari string ke number, atau sebaliknya.
+    Berikut beberapa method yang bisa kita gunakan : 
+
+    Nama                | Keterangan
+    ===============================================================================
+    parseInt(string)    | mengkonversi string ke number (bilangan bulat).
+    parseFloat(string)  | mengkonversi string ke number (bilangan pecahan).
+    Number(string)      | mengkonversi string ke number (bilangan bulat / pecahan).
+    number.toString()   | mengkonversi number ke string.
+
+    sehingga jika contoh diatas kita perbaiki, menjadi berikut : 
+
+        const value1 = parseInt("1");
+        const value2 = 1;
+
+        const result = value1 + value2;
+
+        document.writeln(`<p>${result}</p>`); // skearang outputnya 2.
+
+        // berikut contoh lainya :
+
+        document.writeln(`<p>parseInt("1.1")</p>`);  // output 1, bukan hasil pembulatan, walaupun 1.9, hasilnya akan tetap 1.
+        document.writeln(`<p>parseFloat("1.1")</p>`);  // output 1.1
+        document.writeln(`<p>Number("1.1")</p>`);  // output 1.1, karena ini bisa bilangan bulat / pecahan.
+
+        // contoh konversi number ke string : 
+
+        const a = 1;
+        const b = 2;
+
+        const sum = a.toString() + b.toString();
+
+        document.writeln(`<p>${sum}</p>`);  // output : 12 karena number sudah di convert menjadi string.
+
+    selanjutnya jika kita mencoba mengkonversi data yang tidak valid dari string ke number, maka akan menghasilkan NaN.
+    NaN adalah number khusus yang digunakan untuk menyebutkan bahwa itu bukanlah number.
+    Jika data NaN di operasikan dengan number lainya, maka dia akan tetap menghasilkan NaN.
+    contoh : 
+        
+        document.writeln(`<p>parseInt("salah")</p>`);     
+        //output : NaN, karena bukan merupakan data yang valid, tapi jika kita menambahkan angka di paling depan seperti ini : 
+        document.writeln(`<p>parseInt("2salah")</p>`);     
+        //output : 2, karena parseInt masih mentolelir kesalahan, jika depanya masih angka. 
+        
+        // begitu juga dengan parseFloat.
+
+        document.writeln(`<p>parseFloat("1.1act")</p>`);     // output : 1.1
+        document.writeln(`<p>parseFloat("f1.1")</p>`);       // output : NaN
+
+        // berbeda dengan Number, dia tidak akan mentolelir kesalahan apapun
+        document.writeln(`<p>Number("1.1")</p>`);       // output : 1.1
+        document.writeln(`<p>Number("1.1z")</p>`);       // output : NaN
+        document.writeln(`<p>Number("salah")</p>`);       // output : NaN
+
+        // melakukan operasi apapun dengan bilangan NaN akan menghasilkan NaN
+        const awal = "b";
+        const hasil = awal + 199;
+
+        document.writeln(`<p>hasil</p>`);       // output : NaN
+    
+    Jika kita ingin mengecek apakah suatu variabel / data itu berupa NaN / bukan, kita bisa menggunakan function isNaN(Number);
+    Function ini akan mengembalikan true, jika variabel itu berupa NaN, dan false, jika variabel bukan berupa NaN.
+    contoh : 
+
+        document.writeln(`<p>isNaN(awal)</p>`);     // output : true;
+        document.writeln(`<p>isNaN(100)</p>`);     // output : false;
+        document.writeln(`<p>isNaN(NaN)</p>`);     // output : true;
