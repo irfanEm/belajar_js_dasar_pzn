@@ -352,3 +352,46 @@ sangat hebat!`;
         document.writeln(`<p>isNaN(awal)</p>`);     // output : true;
         document.writeln(`<p>isNaN(100)</p>`);     // output : false;
         document.writeln(`<p>isNaN(NaN)</p>`);     // output : true;
+
+14. Tipe Data Array
+    Array adalah tipe data yang berisi kumpulan data.
+    Array bersifat dinamis, artinya datanya bisa bertambah dengan sendirinya ketika kita memasukan data kedalam array.
+    Untuk membuat array kita bisa menggunakan tanda kurung kotak ([]).
+    contoh :
+
+        // membuat array kosong
+        let arrayKosong = [];
+
+        // membuat array berisi data
+        let arrayData = ['contoh', 'data', 1, true];
+        // data bisa berisi string, number, boolean dll.
+
+    Setiap data dalam array disimpan dalam posisi yang berurutan, dan urutanya akan dimulai dari 0.
+    Setiap kita menambahkan data ke dalam array, maka data akan berada di urutan terakhir.
+    Urutan dalam array itu disebut 'index'.
+    Panjang array, adalah jumlah data yang ada didalam array. misalkan jumlah data didalam array ada 7 maka panjang array = 7.
+    Tapi panjang array itu tidak menunjukan index terakhir dari array. karena index itu dimulai dari 0.
+    Jadi rumusnya, index terakhir dari sebuah array itu adalah panjang array - 1. Jadi misal panjang array itu 7, maka index terakhir dalam array tersebut adalah 7 - 1 = 6.
+    
+    # Menambahkan data ke array.
+    Untuk menambahkan data ke array, kita bisa menggunakan method 'push()' pada nama variabel array.
+    Lalu masukan nilai yang ingin kita tambahkan sebagai argument dari method 'push()';
+    contoh :
+
+        const names = [];
+        names.push('Balqis');
+        names.push('Farah', 'Anabila');
+
+        console.table(names);
+        // dengan menggunakan console.table, maka data akan ditampilkan dalam bentuk table.
+    
+    # Operasi array.
+    berikut beberapa operasi array : 
+
+    Nama Operasi            | Keterangan
+    ================================================================================================
+    array.push()            | Untuk menambahkan data ke dalam array.
+    array.length            | Untuk mendapatkan panjang array.
+    array[index]            | Untuk mendapatkan data array pada index tertentu.
+    array[index] = value    | untuk mengubah data array pada index tertentu.
+    delete array[index]     | Untuk menghapus data array pada index tertentu, tanpa menggeser array.
